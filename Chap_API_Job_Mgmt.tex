@@ -225,6 +225,17 @@ Regular expression of the number of \acp{PU} for each node being requested in an
 \declareAttribute{PMIX_ALLOC_CPU_LIST}{"pmix.alloc.cpulist"}{char*}{
 Regular expression of the specific \acp{PU}  being requested in an allocation request.
 }
+\declareAttribute{PMIX_ALLOC_NUM_GPUS}{"pmix.alloc.ncpus"}{uint64_t}{
+Number of \agp{PU} being requested in an allocation request.
+}
+%
+\declareAttribute{PMIX_ALLOC_NUM_GPU_LIST}{"pmix.alloc.ncpulist"}{char*}{
+Regular expression of the number of \agp{PU} for each node being requested in an allocation request.
+}
+%
+\declareAttribute{PMIX_ALLOC_GPU_LIST}{"pmix.alloc.cpulist"}{char*}{
+Regular expression of the specific \agp{PU}  being requested in an allocation request.
+}
 %
 \declareAttribute{PMIX_ALLOC_MEM_SIZE}{"pmix.alloc.msize"}{float}{
 Number of Megabytes[base2] of memory (per process) being requested in an allocation request.
